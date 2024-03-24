@@ -29,7 +29,7 @@ class Graph:
 
         return distances
 
-# Задання графа (використовуємо граф з Завдання 1)
+# Задання графа
 graph = Graph()
 graph.add_edge('A', 'B', 4)
 graph.add_edge('A', 'C', 2)
@@ -46,6 +46,6 @@ for vertex in list(graph.graph.keys()):  # Використовуємо list() �
 # Запускаємо алгоритм Дейкстри для знаходження найкоротших відстаней від вершини 'A'
 start_vertex = 'A'
 shortest_distances = graph.dijkstra(start_vertex)
-print("Shortest distances from vertex", start_vertex)
+print("Найкоротший шлях від вершини", start_vertex)
 for vertex, distance in shortest_distances.items():
-    print("Vertex:", vertex, ", Distance:", distance)
+    print("Вершина:", vertex, ", Відстань:", distance)
